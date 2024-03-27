@@ -1,0 +1,13 @@
+﻿  contest3.c
+D:\Study\Code\Cprogramming\visualStudio\contest3\contest3\contest3.c(559,29): warning C4244: 'function': conversion from '__int64' to 'double', possible loss of data
+D:\Study\Code\Cprogramming\visualStudio\contest3\contest3\contest3.c(583,13): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+D:\Study\Code\Cprogramming\visualStudio\contest3\contest3\contest3.c(598,8): warning C4477: 'scanf' : format string '%d' requires an argument of type 'int *', but variadic argument 1 has type '__int64 *'
+  D:\Study\Code\Cprogramming\visualStudio\contest3\contest3\contest3.c(598,8):
+  consider using '%lld' in the format string
+  D:\Study\Code\Cprogramming\visualStudio\contest3\contest3\contest3.c(598,8):
+  consider using '%Id' in the format string
+  D:\Study\Code\Cprogramming\visualStudio\contest3\contest3\contest3.c(598,8):
+  consider using '%I64d' in the format string
+  
+D:\Study\Code\Cprogramming\visualStudio\contest3\contest3\contest3.c(595,1): warning C4715: 'check': not all control paths return a value
+  contest3.vcxproj -> D:\Study\Code\Cprogramming\visualStudio\contest3\x64\Debug\contest3.exe

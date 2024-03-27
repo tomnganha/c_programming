@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Study\\Code\\Cprogramming\\visualStudio\\learnC\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EA40EC8F-BC80-47DE-92D8-9FD4ABE386B6}|learnC\\learnC.vcxproj|D:\\Study\\Code\\Cprogramming\\visualStudio\\learnC\\learnC\\contest2.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{EA40EC8F-BC80-47DE-92D8-9FD4ABE386B6}|learnC\\learnC.vcxproj|solutionrelative:learnC\\contest2.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "contest2.c",
+              "DocumentMoniker": "D:\\Study\\Code\\Cprogramming\\visualStudio\\learnC\\learnC\\contest2.c",
+              "RelativeDocumentMoniker": "learnC\\contest2.c",
+              "ToolTip": "D:\\Study\\Code\\Cprogramming\\visualStudio\\learnC\\learnC\\contest2.c",
+              "RelativeToolTip": "learnC\\contest2.c",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-03-16T03:18:15.789Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
