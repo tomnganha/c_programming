@@ -80,23 +80,49 @@
 //	return nt(sum);
 //}
 
-int dem[1000001];
-int main() {
-	int n;
-	scanf("%d", &n);
-	int a[100];
-	for (int i = 0; i < n; i++) {
-		scanf("%d", &a[i]);
-	}
-	for (int i = 0; i < n; i++) {
-		dem[a[i]]++;
-	}
-	int count=0;
-	for (int i = 1000001; i >=0; i--) {
-		if (dem[i] >= count) count = i;
-	}
-	printf("%d", count);
+//int dem[1000001];
+//int main() {
+//	int n;
+//	int max = dem[0];
+//	scanf("%d", &n);
+//	int a[100];
+//	for (int i = 0; i < n; i++) {
+//		scanf("%d", &a[i]);
+//	}
+//	for (int i = 0; i < n; i++) {
+//		dem[a[i]]++;
+//	}
+//	
+//	for (int i =1; i < 1000001; i++) {
+//		if (max < dem[i]) {
+//			max = dem[i];
+//		}
+//	}
+//	return 0;
+//}
 
-	
-	return 0;
-}
+//SANG SO NGUYEN TO
+//int n = 1000000;
+//int prime[1000001];
+//void sang() {
+//	for (int i = 0; i <= n; i++) {
+//		prime[i] = 1;
+//	}
+//	prime[0] = prime[1] = 0;
+//	for (int i = 2; i <= sqrt(n); i++) {
+//		if (prime[i] == 1) {
+//			for (int j = i*i ; j <= n; j += i) {
+//				prime[j] = 0;
+//			}
+//		}
+//	}
+//}
+//int main() {
+//	sang();
+//	for (int i = 0; i <= 20; i++) {
+//		if (prime[i] == 1) {
+//			printf("%d ", i);
+//		}
+//	}
+//	return 0;
+//}
