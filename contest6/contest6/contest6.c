@@ -61,33 +61,148 @@
 //}
 
 //SAP XEP dem phan phoi
-void couting_sort(int a[], int n) {
-	int dem[100001];
-	for (int i = 0; i < 100001; i++) {
-		dem[i] = 0;
-	}
-	for (int i = 0; i < n; i++) {
-		dem[a[i]]++;
-	}
-	
-	for (int i = 0; i < 100001; i++) {
-		if (dem[i] != 0) {
-			for (int j = 1; j <= dem[i]; j++) {
-				printf("%d ", i);
-			}
+//void couting_sort(int a[], int n) {
+//	int dem[100001];
+//	for (int i = 0; i < 100001; i++) {
+//		dem[i] = 0;
+//	}
+//	for (int i = 0; i < n; i++) {
+//		dem[a[i]]++;
+//	}
+//	
+//	for (int i = 0; i < 100001; i++) {
+//		if (dem[i] != 0) {
+//			for (int j = 1; j <= dem[i]; j++) {
+//				printf("%d ", i);
+//			}
+//		}
+//	}
+//}
+//int main() {
+//	int n;
+//	scanf("%d", &n);
+//	int a[100];
+//	for (int i = 0; i < n; i++) {
+//		scanf("%d", &a[i]);
+//	}
+//	for (int i = 0; i < n; i++) {
+//		printf("%d ", a[i]);
+//	}
+//	printf("\n");
+//	couting_sort(a, n);
+//}
+//trn hai day tang dan tao thanh day tang dan
+
+//int main() {
+//	int m,n;
+//	scanf("%d%d", &m, &n);
+//	int a[100];
+//	int b[100];
+//	for (int i = 0; i < m; i++){
+//		scanf("%d", &a[i]);
+//	}
+//	for (int i = 0; i < n; i++) {
+//		scanf("%d", &b[i]);
+//	}
+//	int i = 0;int  j = 0;
+//	while (i < m && j < n) {
+//		if (a[i] <= b[j]) {
+//			printf("%d ", a[i]); ++i;
+//		}
+//		else {
+//			printf("%d ", b[j]); ++j;
+//		}
+//		
+//	}
+//	while (i < m) {
+//		printf("%d ", a[i]); i++;
+//	}
+//	while (j <n) {
+//		printf("%d ", b[j]); j++;
+//	}
+//	return 0;
+//}
+
+//TIM KIEM NHI PHAN VA TIM KIEM TUYEN TINH
+//int binary_search(int a[], int n,int k) {
+//	int left = 0, right = n - 1;
+//	int mid;
+//	while (left<=right) {
+//		mid = (left + right) / 2;
+//		if (a[mid] > k) {
+//			right = mid - 1;
+//		}
+//		else if (a[mid] < k) {
+//			left = mid + 1;
+//		}
+//		else {
+//			return 1;
+//		}
+//	}
+//	return 0;
+//	
+//}
+
+//tim kiem nhi phan phan tu dau tien trong mang
+//int first(int a[], int n, int k) {
+//	int left = 0, right = n - 1;
+//	int mid,res=-1;
+//	while (left <= right) {
+//		mid = (left + right) / 2;
+//		if (a[mid] == k) {
+//			res = mid;
+//			right = mid - 1;
+//		}
+//		else if (a[mid] < k) {
+//			left = mid + 1;
+//		}
+//		else {
+//			right = mid - 1;
+//		}
+//	}
+//	return res;
+//}
+//int last(int a[], int n, int k) {
+//	int left = 0, right = n - 1;
+//	int mid, res = -1;
+//	while (left <= right) {
+//		mid = (left + right) / 2;
+//		if (a[mid] == k) {
+//			res = mid;
+//			left = mid + 1;
+//		}
+//		else if (a[mid] < k) {
+//			left = mid + 1;
+//		}
+//		else {
+//			right = mid - 1;
+//		}
+//	}
+//	return res;
+//}
+//tim phan tu cuoi cung trong day tang dan nho hon hoac bang x
+int last(int a[], int n, int x) {
+	int l = 0, r = 0;
+	int mid, res=-1;
+	while (l <= r) {
+		mid = (l+r)/2;
+		if (a[mid] <= x) {
+			res = mid;
+			l = mid + 1;
+		}
+		else {
+			r = mid - 1;
 		}
 	}
+	return res;
 }
 int main() {
-	int n;
-	scanf("%d", &n);
+	int n, k;
+	scanf("%d%d", &n, &k);
 	int a[100];
 	for (int i = 0; i < n; i++) {
 		scanf("%d", &a[i]);
 	}
-	for (int i = 0; i < n; i++) {
-		printf("%d ", a[i]);
-	}
-	printf("\n");
-	couting_sort(a, n);
+	printf("%d", last(a, n, k));
+	return 0;
 }
